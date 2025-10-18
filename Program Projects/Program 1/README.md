@@ -1,0 +1,15 @@
+# Readme
+
+Name: Jonathan Skalski
+Program Name: CSC221Program1.py
+
+## How to Execute:
+1. Open in your IDE
+2. Run the program (Green arrow in PyCharm, Run in ZyLabs)
+3. Follow the prompts
+     -Enter the number of CSC221 Books purchased
+     -Enter the cost of 1 book
+
+This was created with PyCharm.
+
+No special instructions for execution.
