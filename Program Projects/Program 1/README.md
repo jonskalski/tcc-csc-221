@@ -1,9 +1,9 @@
-#Readme
+# Readme
 
 Name: Jonathan Skalski
 Program Name: CSC221Program1.py
 
-How to Execute:
+## How to Execute:
 1. Open in your IDE
 2. Run the program (Green arrow in PyCharm, Run in ZyLabs)
 3. Follow the prompts
