@@ -1,3 +1,6 @@
+#Write a program that takes in four positive integers and outputs the number of odd numbers.
+#(Hint: use the modulo operator to determine if a number is odd)
+
 num_1 = int(input())
 num_2 = int(input())
 num_3 = int(input())
