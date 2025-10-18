@@ -1,3 +1,6 @@
+#Write a program that takes in three integers and outputs the largest value.
+#If the input integers are the same, output the integers' value.
+
 num_1 = int(input())
 num_2 = int(input())
 num_3 = int(input())

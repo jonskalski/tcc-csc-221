@@ -1,3 +1,6 @@
+#Write a program that takes in two integers and outputs the larger value.
+#If the two integers are the same, output the integers' value.
+
 num_1 = int(input())
 num_2 = int(input())
 
