@@ -1,0 +1,42 @@
+//sets initial loop
+play_again = "Y"
+
+
+//Program runs only when variable is Y
+while play_again IS "Y"
+    secret_number = random number from 1 to 50
+    guess_count = 0
+    user_guess = 99 //Set to 99 to bypass while loop
+
+    while user_guess not equal to secret_number and user_guess not equal to 0
+        user_guess = input from user after "Enter a guess 1-50, or 0 to quit:"
+
+        if user_guess < 0 OR user_guess > 50 THEN //validates correct responses
+            print "Guess must be between 1 and 50!"
+        else if user_guess == 0 //checks for quit
+            print "Come back soon!"
+            play_again equals "N"
+        else increase guess_count by 1 //adds to guess
+
+            if user_guess > secret_number
+                print "Too High!"
+            else if user_guess < secret_number
+                print "Too Low!"
+            else print "That's it! You took " guess_count "guesses to get the number."
+
+            end if
+
+        end if
+
+    end while
+
+    if user_guess not equal to 0
+        print "Would you like to play again? (Y/N):"
+        input play_again
+    else play_again equals "N"
+
+    end if
+
+end while
+
+print "Thanks for playing!"
