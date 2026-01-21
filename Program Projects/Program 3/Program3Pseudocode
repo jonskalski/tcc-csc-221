@@ -1,0 +1,90 @@
+
+function get_user_inputs
+	Output “enter number of values to generate”
+	Input count_nums
+		while count_nums is <= 0
+			Output “please enter a positive integer”
+			Output “enter number of values to generate”
+			Input count_nums
+		End while
+	Output enter low end of the set
+	Input low_num
+	Output enter high end of the set
+	Input high_num
+
+	While low_num > high_num
+		Output low number must be lower than high number
+		Output enter low end of the set
+		Input low_num
+		Output enter high end of the set
+		Input high_num
+	end while
+
+	return count_nums, low_num, high_num
+
+function generate_list(count_nums,low_num,high_num)
+	create num_list = []
+	for i in range(count_nums)
+		rand_num = random number between low_num and high_num
+		add rand_num to num_list
+	return num_list
+
+function num_calc(num_list)
+	odd_nums = 0
+	even_nums = 0
+
+	for num in num_list:
+		if num % 2 == 0
+			increment even_nums
+		else
+			increment odd_nums
+		end if
+
+	return odd_nums, even_nums
+
+function main
+	total_lists = 0
+	total_numbers = 0
+	total_odd = 0
+	total_even = 0
+
+	again = “Y”
+
+	while again is “Y”
+		count_nums,low_num,high_num = get_user_inputs()
+		num_list = generate_list(count_nums,low_num,high_num)
+		odd_nums,even_nums = num_calc(num_list)
+		odd_pct = calculate odd percentage
+		even_pct = calculate even percentage
+		output odd_pct
+		output even_pct
+
+		increment total_lists
+		increment total_numbers
+		increment total_odd
+		increment total_even
+
+		input again in uppercase “Do you wish to continue”
+			if again is Y or N
+				break
+			else
+				Ask for a proper response
+			end if
+	end while
+
+	output —-Session Summary—-
+	output total lists generated
+	output total numbers generated
+
+	if total_numbers > 0
+		odd_pct = (total_odd / total_numbers) * 100
+        even_pct = (total_even / total_numbers) * 100
+		output total odd percentage
+		output total even percentage
+	else
+		output no numbers were analyzed
+	end if
+
+Start program here
+	Call main program
+
